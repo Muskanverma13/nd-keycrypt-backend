@@ -5,11 +5,7 @@ const app = express();
 const port = process.env.PORT || 10000;
 
 // Allowed origins (local + deployed)
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://n-d-key-crypt.vercel.app',
-  'https://n-d-key-crypt-git-master-muskanverma0213gmailcoms-projects.vercel.app'
-];
+const allowedOrigins = [ 'https://nd-keycrypt-frontend.vercel.app', 'http://localhost:3000'];
 
 // Manual CORS headers (for OPTIONS preflight & older clients)
 app.use((req, res, next) => {
